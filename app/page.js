@@ -2,6 +2,17 @@ import PlainTextBodyOne from '@/components/atoms/PlainTextBodyOne';
 import PlainTextHeadingOne from '@/components/atoms/PlainTextHeadingOne';
 import ColorsGradientBackground from '@/components/templates/ColorsGradientBackground';
 import { cn } from '@/lib/utils';
+import {
+  Facebook,
+  Github,
+  Gitlab,
+  Instagram,
+  Linkedin,
+  Mail,
+  Twitter,
+  X,
+  Youtube,
+} from 'lucide-react';
 
 export default function Home() {
   return (
@@ -38,6 +49,27 @@ export default function Home() {
             />
             <hr className="md:hidden w-full" />
           </div>
+        </div>
+        <div
+          className={cn(
+            `flex
+            items-center
+            justify-center
+            md:justify-end
+            gap-[8px]
+            py-[16px]
+            md:mt-[16px]
+            animate-icons`,
+          )}
+        >
+          <Instagram className="icon-animate" color="#bebebe" />
+          <Facebook className="icon-animate" color="#bebebe" />
+          <Youtube className="icon-animate" color="#bebebe" />
+          <Twitter className="icon-animate" color="#bebebe" />
+          <Linkedin className="icon-animate" color="#bebebe" />
+          <Mail className="icon-animate" color="#bebebe" />
+          <Github className="icon-animate" color="#bebebe" />
+          <Gitlab className="icon-animate" color="#bebebe" />
         </div>
       </div>
     </div>
