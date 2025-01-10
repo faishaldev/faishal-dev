@@ -1,10 +1,11 @@
 import Noise from '../../assets/images/noise.png';
 import LinePattern from '../../assets/images/line-pattern.svg';
+import { cn } from '@/lib/utils';
 
 export default function ColorsGradientBackground({ className = '' }) {
   return (
     <div
-      className={`
+      className={cn(`
         bg-gradient-to-r
         from-red-500
         via-green-500
@@ -12,7 +13,7 @@ export default function ColorsGradientBackground({ className = '' }) {
         relative
         w-full
         h-full
-        ${className}`}
+        ${className}`)}
     >
       <div
         className="absolute w-full h-full opacity-25"
