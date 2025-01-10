@@ -214,39 +214,6 @@ body {
   animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-.hover-lighting {
-  position: relative;
-  transition: text-shadow 0.3s ease-in-out;
-}
-
-.hover-lighting:hover::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.5),
-    transparent
-  );
-  animation: sharpness 1s infinite;
-}
-
-@keyframes sharpness {
-  0% {
-    left: -100%;
-  }
-  50% {
-    left: 100%;
-  }
-  100% {
-    left: -100%;
-  }
-}
-
 .icon-animate {
   transition: transform 0.3s ease-in-out;
 }

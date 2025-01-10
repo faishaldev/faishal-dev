@@ -31,14 +31,14 @@ export default function Home() {
             h-full`,
           )}
         >
-          <div className="flex flex-col items-center animate-fade-in">
+          <div className="flex flex-col items-center animate-fade-in hover:cursor-pointer">
             <PlainTextHeadingOne
               text="Faishal"
-              className="hover-lighting hover:cursor-pointer"
+              className="hover:cursor-pointer"
             />
             <PlainTextBodyOne
               text="Software Engineer"
-              className="hover-lighting hover:cursor-pointer"
+              className="hover:cursor-pointer"
             />
           </div>
           <div className="flex flex-col items-center w-full">
@@ -62,14 +62,35 @@ export default function Home() {
             animate-icons`,
           )}
         >
-          <Instagram className="icon-animate" color="#bebebe" />
-          <Facebook className="icon-animate" color="#bebebe" />
-          <Youtube className="icon-animate" color="#bebebe" />
-          <Twitter className="icon-animate" color="#bebebe" />
-          <Linkedin className="icon-animate" color="#bebebe" />
-          <Mail className="icon-animate" color="#bebebe" />
-          <Github className="icon-animate" color="#bebebe" />
-          <Gitlab className="icon-animate" color="#bebebe" />
+          <Instagram
+            className="icon-animate hover:cursor-pointer"
+            color="#bebebe"
+          />
+          <Facebook
+            className="icon-animate hover:cursor-pointer"
+            color="#bebebe"
+          />
+          <Youtube
+            className="icon-animate hover:cursor-pointer"
+            color="#bebebe"
+          />
+          <Twitter
+            className="icon-animate hover:cursor-pointer"
+            color="#bebebe"
+          />
+          <Linkedin
+            className="icon-animate hover:cursor-pointer"
+            color="#bebebe"
+          />
+          <Mail className="icon-animate hover:cursor-pointer" color="#bebebe" />
+          <Github
+            className="icon-animate hover:cursor-pointer"
+            color="#bebebe"
+          />
+          <Gitlab
+            className="icon-animate hover:cursor-pointer"
+            color="#bebebe"
+          />
         </div>
       </div>
     </div>
