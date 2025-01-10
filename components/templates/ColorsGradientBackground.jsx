@@ -16,11 +16,17 @@ export default function ColorsGradientBackground({ className = '' }) {
         ${className}`)}
     >
       <div
-        className="absolute w-full h-full opacity-25"
+        className="absolute w-full h-full animate-gradient-x"
+        style={{
+          backgroundImage: `linear-gradient(to right, red, green, purple)`,
+        }}
+      />
+      <div
+        className="absolute w-full h-full opacity-25 animate-noise"
         style={{ backgroundImage: `url(${Noise.src})` }}
       />
       <div
-        className="absolute w-full h-full"
+        className="absolute w-full h-full animate-line-pattern"
         style={{ backgroundImage: `url(${LinePattern.src})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#101012]" />
