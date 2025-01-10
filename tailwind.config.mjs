@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const config = {
   darkMode: ['class'],
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -76,7 +76,13 @@ export default {
           '100%': { backgroundPosition: '100% 100%' },
         },
       },
+      fontFamily: {
+        'agrandir-regular': ['agrandir-regular', 'serif'],
+        'acumin-regular': ['acumin-regular', 'serif'],
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
 };
+
+export default config;
