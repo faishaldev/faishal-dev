@@ -6,7 +6,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"AdamRaichu.font-viewer"
+				"AdamRaichu.font-viewer",
+				"esbenp.prettier-vscode"
 			]
 		}
 	}
