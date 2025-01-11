@@ -12,21 +12,25 @@ import {
   Twitter,
   Youtube,
 } from 'lucide-react';
+import { Button } from '../ui/button';
+import Image from 'next/image';
+import FaishalDev from '../../assets/images/faishaldev.jpg';
+import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="sticky w-full top-0">
+    <header className="sticky top-0">
       <ColorsGradientBackground className="h-[150px] animate-gradient" />
-      <div className="absolute top-0 p-[32px] md:p-[32px] w-full h-full">
+      <div className="container m-auto absolute left-0 right-0 top-0 py-[24px] w-full h-full">
         <div
           className={cn(
             `flex
             flex-col
+            xl:flex-row
+            justify-between
             gap-[8px]
             md:gap-[16px]
-            justify-between
-            md:justify-normal
-            md:items-center
+            items-center
             w-full
             h-full`,
           )}
@@ -34,23 +38,44 @@ export default function Header() {
           <div
             className={cn(
               `flex
-              flex-col
-              md:gap-[8px]
+              justify-center
+              md:justify-start
+              gap-[32px]
               items-center
-              animate-fade-in
-              hover:cursor-pointer`,
+              w-full
+              max-w-[420px]
+              animate-fade-in`,
             )}
           >
-            <PlainTextHeadingOne
-              text="Faishal"
-              className="hover:cursor-pointer"
+            <Image
+              src={FaishalDev}
+              width={115}
+              height={115}
+              className={cn(
+                `rounded-full photo-effect brightness-75 cursor-pointer w-[84px] md:w-[100px]`,
+              )}
             />
-            <PlainTextBodyOne
-              text="Software Engineer"
-              className="hover:cursor-pointer"
-            />
+            <div
+              className={cn(
+                `flex
+                flex-col
+                md:gap-[4px]
+                items-center
+                hover:cursor-pointer
+                text-glow`,
+              )}
+            >
+              <PlainTextHeadingOne
+                text="Faishal"
+                className="hover:cursor-pointer"
+              />
+              <PlainTextBodyOne
+                text="Software Engineer"
+                className="hover:cursor-pointer"
+              />
+            </div>
           </div>
-          <div className="flex flex-col items-center py-[8px]">
+          <div className="flex flex-col items-center py-[8px] animate-fade-in">
             <hr className="w-full border-[#6D6D6D]" />
             <PlainTextBodyOne
               text='"Crafting code like threads of art"'
@@ -58,9 +83,10 @@ export default function Header() {
             />
             <hr className="w-full border-[#6D6D6D]" />
           </div>
-          <div
-            className={cn(
-              `flex
+          <div className="flex flex-col items-end justify-between h-full">
+            <div
+              className={cn(
+                `flex
               items-center
               justify-center
               md:justify-end
@@ -68,41 +94,113 @@ export default function Header() {
               md:py-0
               gap-[8px]
               md:gap-[16px]
-              animate-icons`,
-            )}
-          >
-            <Instagram
-              className="icon-animate hover:cursor-pointer"
-              color="#bebebe"
-            />
-            <Facebook
-              className="icon-animate hover:cursor-pointer"
-              color="#bebebe"
-            />
-            <Youtube
-              className="icon-animate hover:cursor-pointer"
-              color="#bebebe"
-            />
-            <Twitter
-              className="icon-animate hover:cursor-pointer"
-              color="#bebebe"
-            />
-            <Linkedin
-              className="icon-animate hover:cursor-pointer"
-              color="#bebebe"
-            />
-            <Mail
-              className="icon-animate hover:cursor-pointer"
-              color="#bebebe"
-            />
-            <Github
-              className="icon-animate hover:cursor-pointer"
-              color="#bebebe"
-            />
-            <Gitlab
-              className="icon-animate hover:cursor-pointer"
-              color="#bebebe"
-            />
+              animate-fade-in`,
+              )}
+            >
+              <Link
+                href="https://instagram.com/faishaldev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram
+                  className="icon-animate hover:cursor-pointer"
+                  color="#bebebe"
+                />
+              </Link>
+              <Link
+                href="https://facebook.com/faishaldev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Facebook
+                  className="icon-animate hover:cursor-pointer"
+                  color="#bebebe"
+                />
+              </Link>
+              <Link
+                href="https://youtube.com/@faishaldev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Youtube
+                  className="icon-animate hover:cursor-pointer"
+                  color="#bebebe"
+                />
+              </Link>
+              <Link
+                href="https://x.com/faishaldev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Twitter
+                  className="icon-animate hover:cursor-pointer"
+                  color="#bebebe"
+                />
+              </Link>
+              <Link
+                href="https://linkedin.com/in/faishaldev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin
+                  className="icon-animate hover:cursor-pointer"
+                  color="#bebebe"
+                />
+              </Link>
+              <Link
+                href="mailto:hi@faishal.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Mail
+                  className="icon-animate hover:cursor-pointer"
+                  color="#bebebe"
+                />
+              </Link>
+              <Link
+                href="https://github.com/faishaldev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github
+                  className="icon-animate hover:cursor-pointer"
+                  color="#bebebe"
+                />
+              </Link>
+              <Link
+                href="https://gitlab.com/faishaldev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Gitlab
+                  className="icon-animate hover:cursor-pointer"
+                  color="#bebebe"
+                />
+              </Link>
+            </div>
+            <Link
+              href="https://wa.me/62895381900306"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="active:scale-95 duration-300 py-[8px] md:py-0 w-full animate-fade-in"
+            >
+              <Button
+                effect="shine"
+                className={cn(
+                  `font-acumin-regular
+                  text-[14px]
+                  md:text-[16px]
+                  text-[#bebebe]
+                  border
+                  border-[#6D6D6D]
+                  rounded-xl
+                  tracking-wider
+                  w-full`,
+                )}
+              >
+                Let's make magic! 🪄
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

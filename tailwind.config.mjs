@@ -59,6 +59,7 @@ const config = {
         'gradient-x': 'gradient-x 6s ease infinite',
         noise: 'noise 2s steps(10) infinite',
         'line-pattern': 'line-pattern 10s linear infinite',
+        shine: 'shine 3s ease-out infinite',
       },
       keyframes: {
         'gradient-x': {
@@ -74,6 +75,11 @@ const config = {
         'line-pattern': {
           '0%': { backgroundPosition: '0% 0%' },
           '100%': { backgroundPosition: '100% 100%' },
+        },
+        shine: {
+          '0%': { backgroundPosition: '200% 0' },
+          '25%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '-200% 0' },
         },
       },
       fontFamily: {

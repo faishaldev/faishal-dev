@@ -3,15 +3,16 @@ import { cn } from '@/lib/utils';
 export default function PlainTextBodyOne({ text = '', className = '' }) {
   return (
     <p
-      className={cn(`
-        font-acumin-regular
+      className={cn(
+        `font-acumin-regular
         font-[300]
-        text-[16px]
-        md:text-[28px]
+        text-[21px]
+        md:text-[24px]
         leading-[24px]
         text-[#bebebe]
         tracking-wider
-        ${className}`)}
+        ${className}`,
+      )}
     >
       {text}
     </p>

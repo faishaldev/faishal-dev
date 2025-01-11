@@ -6,7 +6,7 @@ export default function PlainTextHeadingOne({ text = '', className = '' }) {
       className={cn(
         `font-agrandir-regular
         text-[56px]
-        md:text-[80px]
+        md:text-[64px]
         font-[700]
         leading-[50px]
         md:leading-[72px]
