@@ -10,6 +10,8 @@ export default function Home() {
         from-black
         to-transparent
         w-full
+        max-w-[720px]
+        m-auto
         h-[calc(100dvh-3dvh)]`,
       )}
     >
@@ -22,8 +24,8 @@ export default function Home() {
           bg-[#101012]
           border-[#6D6D6D]
           rounded-t-3xl
-          my-[56px]
-          md:my-[24px]
+          my-[110px]
+          md:my-[170px]
           parallax-section`,
         )}
       >

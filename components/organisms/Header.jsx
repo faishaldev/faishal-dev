@@ -17,12 +17,13 @@ export default function Header() {
   return (
     <header className="sticky w-full top-0">
       <ColorsGradientBackground className="h-[150px] animate-gradient" />
-      <div className="absolute top-0 p-[16px] md:p-[32px] w-full h-full">
+      <div className="absolute top-0 p-[32px] md:p-[32px] w-full h-full">
         <div
           className={cn(
             `flex
             flex-col
-            md:flex-row
+            gap-[8px]
+            md:gap-[16px]
             justify-between
             md:justify-normal
             md:items-center
@@ -30,7 +31,16 @@ export default function Header() {
             h-full`,
           )}
         >
-          <div className="flex flex-col items-center animate-fade-in hover:cursor-pointer">
+          <div
+            className={cn(
+              `flex
+              flex-col
+              md:gap-[8px]
+              items-center
+              animate-fade-in
+              hover:cursor-pointer`,
+            )}
+          >
             <PlainTextHeadingOne
               text="Faishal"
               className="hover:cursor-pointer"
@@ -40,57 +50,60 @@ export default function Header() {
               className="hover:cursor-pointer"
             />
           </div>
-          <div className="flex flex-col items-center w-full">
-            <hr className="md:hidden w-full" />
+          <div className="flex flex-col items-center py-[8px]">
+            <hr className="w-full border-[#6D6D6D]" />
             <PlainTextBodyOne
               text='"Crafting code like threads of art"'
-              className="italic w-full text-center font-semibold animate-typing py-1"
+              className="italic text-center font-semibold animate-typing p-3 md:py-5"
             />
-            <hr className="md:hidden w-full" />
+            <hr className="w-full border-[#6D6D6D]" />
           </div>
-        </div>
-        <div
-          className={cn(
-            `flex
-            items-center
-            justify-center
-            md:justify-end
-            py-[16px]
-            md:py-0
-            gap-[8px]
-            md:gap-[16px]
-            animate-icons`,
-          )}
-        >
-          <Instagram
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-          <Facebook
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-          <Youtube
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-          <Twitter
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-          <Linkedin
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-          <Mail className="icon-animate hover:cursor-pointer" color="#bebebe" />
-          <Github
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-          <Gitlab
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
+          <div
+            className={cn(
+              `flex
+              items-center
+              justify-center
+              md:justify-end
+              py-[8px]
+              md:py-0
+              gap-[8px]
+              md:gap-[16px]
+              animate-icons`,
+            )}
+          >
+            <Instagram
+              className="icon-animate hover:cursor-pointer"
+              color="#bebebe"
+            />
+            <Facebook
+              className="icon-animate hover:cursor-pointer"
+              color="#bebebe"
+            />
+            <Youtube
+              className="icon-animate hover:cursor-pointer"
+              color="#bebebe"
+            />
+            <Twitter
+              className="icon-animate hover:cursor-pointer"
+              color="#bebebe"
+            />
+            <Linkedin
+              className="icon-animate hover:cursor-pointer"
+              color="#bebebe"
+            />
+            <Mail
+              className="icon-animate hover:cursor-pointer"
+              color="#bebebe"
+            />
+            <Github
+              className="icon-animate hover:cursor-pointer"
+              color="#bebebe"
+            />
+            <Gitlab
+              className="icon-animate hover:cursor-pointer"
+              color="#bebebe"
+            />
+          </div>
         </div>
       </div>
     </header>
