@@ -247,3 +247,19 @@ body {
   transform: scale(1.1) rotate(5deg);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-15dvh);
+  }
+  50% {
+    transform: translateY(5dvh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-bounce-in {
+  animation: bounceIn 1s ease-in-out;
+}

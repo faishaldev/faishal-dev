@@ -50,6 +50,7 @@ export default function Header() {
           >
             <Image
               src={FaishalDev}
+              alt="Faishal's photo"
               width={115}
               height={115}
               className={cn(
