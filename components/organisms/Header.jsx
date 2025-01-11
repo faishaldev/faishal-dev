@@ -174,7 +174,7 @@ export default function Header() {
                 rel="noopener noreferrer"
               >
                 <Gitlab
-                  className="icon-animate hover:cursor-pointer"
+                  className="icon-animate hover:cursor-pointer hover:text-white"
                   color="#bebebe"
                 />
               </Link>
@@ -197,7 +197,9 @@ export default function Header() {
                   border-[#6D6D6D]
                   rounded-xl
                   tracking-wider
-                  w-full`,
+                  w-full
+                  hover:bg-[#6D6D6D]
+                  duration-300`,
                 )}
               >
                 Let's make magic! 🪄

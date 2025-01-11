@@ -62,7 +62,10 @@ export default function Home() {
             border-t
             border-[#6D6D6D]
             text-[#bebebe]
-            tracking-wider`,
+            tracking-wider
+            hover:from-[#6D6D6D]
+            hover:to-[#6D6D6D]
+            duration-300`,
           )}
           onClick={scrollToProjects}
         >
