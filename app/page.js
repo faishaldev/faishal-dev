@@ -4,6 +4,13 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 export default function Home() {
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section
       id="projects"
@@ -47,15 +54,18 @@ export default function Home() {
             px-3
             py-1
             md:py-2
+            bg-gradient-to-t
+            from-transparent
+            to-[#101012]
             rounded-xl
             border-t
             border-[#6D6D6D]
             text-[#bebebe]
             tracking-wider`,
           )}
-          onClick={() => (window.location.href = '/#projects')}
+          onClick={scrollToProjects}
         >
-          my projects
+          PROJECTS
         </Button>
       </div>
     </section>

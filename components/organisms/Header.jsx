@@ -43,8 +43,9 @@ export default function Header() {
               gap-[32px]
               items-center
               w-full
-              max-w-[420px]
-              animate-fade-in`,
+              max-w-[347px]
+              animate-fade-in
+              hover:cursor-pointer`,
             )}
           >
             <Image
@@ -67,11 +68,11 @@ export default function Header() {
             >
               <PlainTextHeadingOne
                 text="Faishal"
-                className="hover:cursor-pointer"
+                className="hover:cursor-pointer hover:scale-105 duration-150"
               />
               <PlainTextBodyOne
                 text="Software Engineer"
-                className="hover:cursor-pointer"
+                className="hover:cursor-pointer hover:scale-105 duration-150"
               />
             </div>
           </div>
@@ -79,22 +80,21 @@ export default function Header() {
             <hr className="w-full border-[#6D6D6D]" />
             <PlainTextBodyOne
               text='"Crafting code like threads of art"'
-              className="italic text-center font-semibold animate-typing p-3 md:py-5"
+              className="italic text-center font-semibold animate-typing py-3 md:p-3 md:py-5"
             />
             <hr className="w-full border-[#6D6D6D]" />
           </div>
-          <div className="flex flex-col items-end justify-between h-full">
+          <div className="flex flex-col items-center justify-between md:gap-[32px] lg:gap-[16px] w-full max-w-[347px] h-full">
             <div
               className={cn(
                 `flex
-              items-center
-              justify-center
-              md:justify-end
-              py-[8px]
-              md:py-0
-              gap-[8px]
-              md:gap-[16px]
-              animate-fade-in`,
+                items-center
+                justify-center
+                md:justify-end
+                py-[8px]
+                md:py-0
+                gap-[20px]
+                animate-fade-in`,
               )}
             >
               <Link
@@ -178,6 +178,7 @@ export default function Header() {
                 />
               </Link>
             </div>
+            <hr className="w-full border-[#6D6D6D] hidden xl:block animate-fade-in" />
             <Link
               href="https://wa.me/62895381900306"
               target="_blank"
