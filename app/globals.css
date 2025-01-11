@@ -225,3 +225,9 @@ body {
 .animate-icons {
   animation: iconLoad 1s ease-in-out;
 }
+
+.parallax-section {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}

@@ -1,98 +1,51 @@
 import PlainTextBodyOne from '@/components/atoms/PlainTextBodyOne';
-import PlainTextHeadingOne from '@/components/atoms/PlainTextHeadingOne';
-import ColorsGradientBackground from '@/components/templates/ColorsGradientBackground';
 import { cn } from '@/lib/utils';
-import {
-  Facebook,
-  Github,
-  Gitlab,
-  Instagram,
-  Linkedin,
-  Mail,
-  Twitter,
-  X,
-  Youtube,
-} from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="relative">
-      <ColorsGradientBackground className="h-[150px] brig animate-gradient" />
-      <div className="absolute top-0 p-[16px] md:p-[32px] w-full h-full">
-        <div
+    <section
+      className={cn(
+        `relative
+        bg-gradient-to-t
+        from-black
+        to-transparent
+        w-full
+        h-[calc(100dvh-3dvh)]`,
+      )}
+    >
+      <div
+        className={cn(
+          `relative
+          w-full
+          h-full
+          border-t
+          bg-[#101012]
+          border-[#6D6D6D]
+          rounded-t-3xl
+          my-[56px]
+          md:my-[24px]
+          parallax-section`,
+        )}
+      >
+        <PlainTextBodyOne
+          text="my projects"
           className={cn(
-            `flex
-            flex-col
-            md:flex-row
-            justify-between
-            md:justify-normal
-            md:items-center
-            w-full
-            h-full`,
+            `absolute
+            left-1/2
+            transform
+            -translate-x-1/2
+            -translate-y-1/2
+            bg-[#101012]
+            px-3
+            py-1
+            md:py-2
+            rounded-full
+            border-t
+            border-[#6D6D6D]
+            text-[#6D6D6D]`,
           )}
-        >
-          <div className="flex flex-col items-center animate-fade-in hover:cursor-pointer">
-            <PlainTextHeadingOne
-              text="Faishal"
-              className="hover:cursor-pointer"
-            />
-            <PlainTextBodyOne
-              text="Software Engineer"
-              className="hover:cursor-pointer"
-            />
-          </div>
-          <div className="flex flex-col items-center w-full">
-            <hr className="md:hidden w-full" />
-            <PlainTextBodyOne
-              text='"Crafting code like threads of art"'
-              className="italic w-full text-center font-semibold animate-typing py-1"
-            />
-            <hr className="md:hidden w-full" />
-          </div>
-        </div>
-        <div
-          className={cn(
-            `flex
-            items-center
-            justify-center
-            md:justify-end
-            gap-[8px]
-            py-[16px]
-            md:mt-[16px]
-            animate-icons`,
-          )}
-        >
-          <Instagram
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-          <Facebook
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-          <Youtube
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-          <Twitter
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-          <Linkedin
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-          <Mail className="icon-animate hover:cursor-pointer" color="#bebebe" />
-          <Github
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-          <Gitlab
-            className="icon-animate hover:cursor-pointer"
-            color="#bebebe"
-          />
-        </div>
+        />
       </div>
-    </div>
+    </section>
   );
 }
