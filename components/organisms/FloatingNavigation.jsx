@@ -29,7 +29,7 @@ export default function FloatingNavigation() {
           className={cn(
             `rounded-full
             focus:outline-none
-            text-white
+            text-[#bebebe]
             font-medium
             font-acumin-regular
             tracking-wider`,
@@ -40,7 +40,7 @@ export default function FloatingNavigation() {
         <Button
           effect="shineHover"
           className={cn(
-            `rounded-full focus:outline-none hover:text-white font-acumin-regular tracking-wider`,
+            `rounded-full focus:outline-none text-[#bebebe] font-acumin-regular tracking-wider`,
           )}
         >
           Blogs
@@ -48,10 +48,10 @@ export default function FloatingNavigation() {
         <Button
           effect="shineHover"
           className={cn(
-            `rounded-full focus:outline-none hover:text-white font-acumin-regular tracking-wider`,
+            `rounded-full focus:outline-none text-[#bebebe] font-acumin-regular tracking-wider`,
           )}
         >
-          Videos
+          Vlogs
         </Button>
       </div>
     </nav>
