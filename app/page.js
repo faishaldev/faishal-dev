@@ -22,7 +22,8 @@ export default function Home() {
         to-transparent
         w-full
         m-auto
-        h-[calc(100dvh-3dvh)]
+        h-[calc(100dvh-16dvh)]
+        md:h-[calc(100dvh-12dvh)]
         backdrop-blur-sm
         animate-bounce-in`,
       )}
@@ -69,7 +70,7 @@ export default function Home() {
           )}
           onClick={scrollToProjects}
         >
-          PROJECTS
+          About Me
         </Button>
       </div>
     </section>

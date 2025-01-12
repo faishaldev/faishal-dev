@@ -200,12 +200,6 @@ body {
   animation: fadeIn 2s ease-in-out;
 }
 
-.animate-gradient {
-  background: linear-gradient(270deg, #ff7e5f, #feb47b);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
 .animate-typing {
   display: inline-block;
   white-space: nowrap;
@@ -237,6 +231,11 @@ body {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
       0 0 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1);
   }
+
+  .photo-glow {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+      0 0 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1);
+  }
 }
 
 .photo-effect {
@@ -260,6 +259,19 @@ body {
   }
 }
 
+@keyframes bounceDown {
+  0% {
+    transform: translateY(-15dvh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .animate-bounce-in {
   animation: bounceIn 1s ease-in-out;
+}
+
+.animate-bounce-down {
+  animation: bounceDown 1s ease-in-out;
 }
