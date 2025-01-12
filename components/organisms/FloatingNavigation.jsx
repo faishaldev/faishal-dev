@@ -32,7 +32,8 @@ export default function FloatingNavigation() {
             text-[#bebebe]
             font-medium
             font-acumin-regular
-            tracking-wider`,
+            tracking-wider
+            w-[96px]`,
           )}
         >
           Projects
@@ -40,7 +41,8 @@ export default function FloatingNavigation() {
         <Button
           effect="shineHover"
           className={cn(
-            `rounded-full focus:outline-none text-[#bebebe] font-acumin-regular tracking-wider`,
+            `rounded-full focus:outline-none text-[#bebebe] font-acumin-regular tracking-wider
+            w-[96px]`,
           )}
         >
           Blogs
@@ -48,7 +50,8 @@ export default function FloatingNavigation() {
         <Button
           effect="shineHover"
           className={cn(
-            `rounded-full focus:outline-none text-[#bebebe] font-acumin-regular tracking-wider`,
+            `rounded-full focus:outline-none text-[#bebebe] font-acumin-regular tracking-wider
+            w-[96px]`,
           )}
         >
           Vlogs
