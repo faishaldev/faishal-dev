@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
+import Link from 'next/link';
 
 export default function FloatingNavigation() {
   return (
@@ -19,43 +20,66 @@ export default function FloatingNavigation() {
           border
           border-[#6D6D6D]
           text-gray-400
+          border-opacity-25
           rounded-full
           p-2
           w-fit`,
         )}
       >
-        <Button
-          effect="shineHover"
-          className={cn(
-            `rounded-full
+        <Link href="/home">
+          <Button
+            effect="shineHover"
+            className={cn(
+              `rounded-full
             focus:outline-none
             text-[#bebebe]
             font-medium
             font-acumin-regular
             tracking-wider
-            w-[96px]`,
-          )}
-        >
-          Projects
-        </Button>
-        <Button
-          effect="shineHover"
-          className={cn(
-            `rounded-full focus:outline-none text-[#bebebe] font-acumin-regular tracking-wider
-            w-[96px]`,
-          )}
-        >
-          Blogs
-        </Button>
-        <Button
-          effect="shineHover"
-          className={cn(
-            `rounded-full focus:outline-none text-[#bebebe] font-acumin-regular tracking-wider
-            w-[96px]`,
-          )}
-        >
-          Vlogs
-        </Button>
+            w-[72px]`,
+            )}
+          >
+            Home
+          </Button>
+        </Link>
+        <Link href="/projects">
+          <Button
+            effect="shineHover"
+            className={cn(
+              `rounded-full
+            focus:outline-none
+            text-[#bebebe]
+            font-medium
+            font-acumin-regular
+            tracking-wider
+            w-[72px]`,
+            )}
+          >
+            Projects
+          </Button>
+        </Link>
+        <Link href="/blogs">
+          <Button
+            effect="shineHover"
+            className={cn(
+              `rounded-full focus:outline-none text-[#bebebe] font-acumin-regular tracking-wider
+            w-[72px]`,
+            )}
+          >
+            Blogs
+          </Button>
+        </Link>
+        <Link href="/vlogs">
+          <Button
+            effect="shineHover"
+            className={cn(
+              `rounded-full focus:outline-none text-[#bebebe] font-acumin-regular tracking-wider
+            w-[72px]`,
+            )}
+          >
+            Vlogs
+          </Button>
+        </Link>
       </div>
     </nav>
   );

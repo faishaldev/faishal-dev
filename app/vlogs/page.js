@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
-export default function Home() {
+export default function Vlogs() {
   const scrollToProjects = () => {
     const projectsSection = document.getElementById('projects');
     if (projectsSection) {
@@ -24,8 +24,7 @@ export default function Home() {
         m-auto
         h-[calc(100dvh-16dvh)]
         md:h-[calc(100dvh-12dvh)]
-        backdrop-blur-sm
-        animate-bounce-in`,
+        backdrop-blur-sm`,
       )}
     >
       <div
@@ -71,7 +70,7 @@ export default function Home() {
           )}
           onClick={scrollToProjects}
         >
-          About Me
+          Vlogs
         </Button>
       </div>
     </section>

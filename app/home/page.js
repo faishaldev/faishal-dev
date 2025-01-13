@@ -24,8 +24,7 @@ export default function Home() {
         m-auto
         h-[calc(100dvh-16dvh)]
         md:h-[calc(100dvh-12dvh)]
-        backdrop-blur-sm
-        animate-bounce-in`,
+        backdrop-blur-sm`,
       )}
     >
       <div
