@@ -1,8 +1,13 @@
+'use client';
+
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function FloatingNavigation() {
+  const pathname = usePathname();
+
   return (
     <nav className={cn(`sticky w-full bottom-0 p-10 animate-fade-in`)}>
       <div
@@ -31,12 +36,17 @@ export default function FloatingNavigation() {
             effect="shineHover"
             className={cn(
               `rounded-full
-            focus:outline-none
-            text-[#bebebe]
-            font-medium
-            font-acumin-regular
-            tracking-wider
-            w-[72px]`,
+              focus:outline-none
+              text-[#bebebe]
+              font-medium
+              font-acumin-regular
+              tracking-wider
+              w-[72px]
+              ${
+                pathname === '/home' || pathname === '/'
+                  ? 'bg-[#6D6D6D] hover:bg-[#6D6D6D]'
+                  : ''
+              }`,
             )}
           >
             Home
@@ -47,12 +57,17 @@ export default function FloatingNavigation() {
             effect="shineHover"
             className={cn(
               `rounded-full
-            focus:outline-none
-            text-[#bebebe]
-            font-medium
-            font-acumin-regular
-            tracking-wider
-            w-[72px]`,
+              focus:outline-none
+              text-[#bebebe]
+              font-medium
+              font-acumin-regular
+              tracking-wider
+              w-[72px]
+              ${
+                pathname === '/projects'
+                  ? 'bg-[#6D6D6D] hover:bg-[#6D6D6D]'
+                  : ''
+              }`,
             )}
           >
             Projects
@@ -63,7 +78,8 @@ export default function FloatingNavigation() {
             effect="shineHover"
             className={cn(
               `rounded-full focus:outline-none text-[#bebebe] font-acumin-regular tracking-wider
-            w-[72px]`,
+            w-[72px]
+            ${pathname === '/blogs' ? 'bg-[#6D6D6D] hover:bg-[#6D6D6D]' : ''}`,
             )}
           >
             Blogs
@@ -74,7 +90,8 @@ export default function FloatingNavigation() {
             effect="shineHover"
             className={cn(
               `rounded-full focus:outline-none text-[#bebebe] font-acumin-regular tracking-wider
-            w-[72px]`,
+            w-[72px]
+            ${pathname === '/vlogs' ? 'bg-[#6D6D6D] hover:bg-[#6D6D6D]' : ''}`,
             )}
           >
             Vlogs
